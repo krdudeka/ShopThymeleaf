@@ -54,6 +54,7 @@ public class UserDaoImpl implements UserDao {
         user.setAge(30);
         user.setCountry("Polska");
         user.setActive(true);
+        saveUser(user);
 
         User user2 = new User();
         user2.setLogin("Alojzy");
@@ -61,6 +62,7 @@ public class UserDaoImpl implements UserDao {
         user2.setAge(20);
         user2.setCountry("USA");
         user2.setActive(false);
+        saveUser(user);
     }
 
 }
