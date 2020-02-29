@@ -62,7 +62,7 @@ public class UserDaoImpl implements UserDao {
         user2.setAge(20);
         user2.setCountry("USA");
         user2.setActive(false);
-        saveUser(user);
+        saveUser(user2);
     }
 
 }
