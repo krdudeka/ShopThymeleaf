@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--tworzymy "fragment" dzieki TH można np. przenosić navbar do innych plików-->
+
+<nav th:fragment="navbar" class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-center">
+        <a th:href="@{/}" class="uk-navbar-item uk-logo">Shop</a>
+        <ul class="uk-navbar-nav">
+            <li class="li uk-parent"><a th:href="@{/products}">Produkty</a></li>
+            <li class="li uk-parent"><a th:href="@{/users}">Użytkownicy</a></li>
+            <li class="li uk-parent"><a th:href="@{/shipping}">Dostawa</a></li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
