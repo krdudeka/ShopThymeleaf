@@ -4,6 +4,7 @@ import pl.edu.wszib.domain.User;
 
 import java.util.List;
 
+
 public interface UserDao {
 
     List<User> getUsers();
@@ -13,6 +14,8 @@ public interface UserDao {
     void removeUser(Long id);
 
     User getById(Long id);
+
+    void deactivateUsers(Long id, User user);
 
 
 }

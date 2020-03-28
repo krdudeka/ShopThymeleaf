@@ -46,4 +46,13 @@ public class UserController {
         return "user";
     }
 
+    @GetMapping("users/deactivation")
+    public String deactivate(User user, Model model, Long id) {
+        model.addAttribute("users", userDao.getUsers());
+        userDao.deactivateUsers(id, user);
+
+        return "redirect:/users";
+    }
+
+
 }
