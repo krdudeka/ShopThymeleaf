@@ -47,13 +47,7 @@ public class UserDaoImpl implements UserDao {
         for (User value : userMap.values()) {
             value.setActive(false);
         }
-
-
-        /*while (userMap.get(id)) {
-            user.setActive(false);
-        }*/
         userMap.values();
-
     }
 
     private void prepareUserList() {
