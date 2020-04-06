@@ -10,6 +10,7 @@ import pl.edu.wszib.dao.ProductDao;
 import pl.edu.wszib.domain.Product;
 
 @Controller
+
 public class ShopController {
 
     @Autowired
